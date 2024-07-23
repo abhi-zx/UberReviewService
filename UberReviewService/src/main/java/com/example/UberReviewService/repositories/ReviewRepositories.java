@@ -1,14 +1,10 @@
 package com.example.UberReviewService.repositories;
 
-import org.springframework.boot.CommandLineRunner;
+import com.example.UberReviewService.models.Review;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class ReviewRepositories implements CommandLineRunner {
+public interface ReviewRepositories extends JpaRepository<Review,Long> {
 
-
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.print("***************");
-    }
 }
